@@ -6,7 +6,7 @@
 </head>
 <body>
 	<nav>
-		<a href="#" class="active">Home</a>
+		<a href="#" class="active" onclick="openPopup()">Home</a>
 		<a href="#">Sobre</a>
 		<a href="#">Credits</a>
 		<a href="#">Main</a>
@@ -14,7 +14,7 @@
 	<h1>Bem-vindo à minha página!</h1>
   <section class="secao1">
   <div id="cards">
-  <div class="card">
+  <div href="#" class="card">
 		<h2>Card 1</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur quam eu massa tempus, vitae dapibus turpis faucibus.</p>
 	</div>
@@ -30,5 +30,23 @@
 	</div>
 </section>
 </div>
+<script>
+	function openPopup() {
+  var popup = window.open("", "popup", "width=400,height=300,top=100,left=100");
+  popup.document.write("<form onsubmit='return false;'>");
+  popup.document.write("<label>Converter metros para milímetros:</label><br>");
+  popup.document.write("<input type='number' id='metros' placeholder='Metros'><br>");
+  popup.document.write("<input type='button' value='Converter' onclick='converter(window.opener);'>");
+  popup.document.write("<p id='resultado'></p>");
+  popup.document.write("</form>");
+}
+
+function converter(parentWindow) {
+  var metros = parentWindow.document.getElementById("metros").value;
+  var milimetros = metros * 1000;
+  parentWindow.document.getElementById("resultado").innerHTML = metros + " metros equivale a " + milimetros + " milímetros.";
+}
+
+</script>
 </body>
 </html>
