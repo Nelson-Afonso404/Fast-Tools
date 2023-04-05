@@ -1,52 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Minha Página</title>
+	<title>Fast Tools</title>
   <link rel="stylesheet" type="text/css" href="/css/home.css" media="screen" />
 </head>
 <body>
+	<script src="/js/functions.js"></script>
 	<nav>
-		<a href="#" class="active" onclick="openPopup()">Home</a>
+		<a class="active">Home</a>
 		<a href="#">Sobre</a>
-		<a href="#">Credits</a>
+		<a href="#">Repositório</a>
 		<a href="#">Main</a>
 	</nav>
-	<h1>Bem-vindo à minha página!</h1>
+	<h1>FERRAMENTAS</h1>
   <section class="secao1">
   <div id="cards">
-  <div href="#" class="card">
-		<h2>Card 1</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur quam eu massa tempus, vitae dapibus turpis faucibus.</p>
+  <div class="card">
+		<h2>Conversor de Medidas</h2>
+		<p>Converta de MM para CM, M para DM, etc.</p>
+		<input class="botao-ferramenta" href="#" type="button" value="Abrir" onclick="openPopup()">
 	</div>
 	
 	<div class="card">
-		<h2>Card 2</h2>
-		<p>Sed vel nisi rutrum, vulputate elit nec, fringilla velit. Duis vel tincidunt est. Aliquam erat volutpat.</p>
+		<h2>Calcular IMC</h2>
+		<p>Uma calculadora simples de IMC.</p>
+		<input class="botao-ferramenta" href="#" type="button" value="Abrir" onclick="openPopup()">
 	</div>
 	
 	<div class="card">
-		<h2>Card 3</h2>
-		<p>Mauris id lectus in sapien ullamcorper consequat. Morbi a velit nunc. Nam consectetur erat sit amet ligula ultrices iaculis.</p>
+		<h2>binário pra Decimal</h2>
+		<p>Transforma de decimal pra binario e vice versa.</p>
+		<input class="botao-ferramenta" href="#" type="button" value="Abrir" onclick="openPopup()">
 	</div>
 </section>
 </div>
-<script>
-	function openPopup() {
-  var popup = window.open("", "popup", "width=400,height=300,top=100,left=100");
-  popup.document.write("<form onsubmit='return false;'>");
-  popup.document.write("<label>Converter metros para milímetros:</label><br>");
-  popup.document.write("<input type='number' id='metros' placeholder='Metros'><br>");
-  popup.document.write("<input type='button' value='Converter' onclick='converter(window.opener);'>");
-  popup.document.write("<p id='resultado'></p>");
-  popup.document.write("</form>");
-}
-
-function converter(parentWindow) {
-  var metros = parentWindow.document.getElementById("metros").value;
-  var milimetros = metros * 1000;
-  parentWindow.document.getElementById("resultado").innerHTML = metros + " metros equivale a " + milimetros + " milímetros.";
-}
-
-</script>
 </body>
 </html>

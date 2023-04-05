@@ -3,6 +3,7 @@ body {
     padding-top: 30px;
     background:#F7F5FB;
     font-family: Arial, sans-serif;
+    color: #011627;
 }
 
 nav {
@@ -30,7 +31,7 @@ nav a:hover {
 }
 
 .active {
-    background-color: #333;
+    background-color: #011627;
     color: #fff;
 }
 
@@ -51,6 +52,7 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     margin: 50px;
+    text-align: center;
 }
 
 .card h2 {
@@ -62,4 +64,17 @@ h1 {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
+}
+.botao-ferramenta{
+    background-color: #011627;
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    width: 50%;
+    transition: background-color 0.3s ease;
+}
+.botao-ferramenta:hover {
+    background-color: #ddd;
 }
