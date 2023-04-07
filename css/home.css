@@ -63,6 +63,7 @@ nav a:hover {
     box-shadow: 0 2px 5px rgba(0, 229, 255, 0.415);
     margin: 50px 0px 50px 0px;
     text-align: center;
+    font-family: 'Montserrat';
 }
 
 .card h2 {
@@ -86,7 +87,7 @@ nav a:hover {
     transition: background-color 0.3s ease;
 }
 .botao-ferramenta:hover {
-    background-color: #ddd;
+    background-color: #dddddd30;
 }
 .secao1{
     margin: 130px;
