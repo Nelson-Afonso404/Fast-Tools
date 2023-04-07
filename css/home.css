@@ -1,8 +1,10 @@
+
 body {
     margin: 0 5%; 
     background:#010b16;
     font-family: 'Montserrat';
     color: #F7F5FB;
+    overflow-x: hidden;
 }
 
 nav {
@@ -111,20 +113,33 @@ nav a:hover {
     0 0 140px 90px #0ff;
 
 }*/
-@media screen and (max-width: 600px) {
+@media only screen and (max-device-width: 600px) {
+    
     #cards{
         flex-direction: column;
-        width: 90%;
+       align-items: center;
     }
     .card{
+        width: 80%;
+        
+        height: auto;
         margin-top: 1px;
         margin: 0px;
     }
     #titulos h1{
-        font-size: 40px;
+        font-size: 70px;
     }
     #titulos p.subtitulo{
+        max-width: 780px;
         margin-bottom: 30px;
+        font-size: 16px;
+    }
+    #titulos{
+        text-align: center;
+        justify-content: center;
+    }
+    .botao-ferramenta{
+        font-size: 15px;
     }
   }
   
