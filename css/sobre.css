@@ -8,23 +8,18 @@ body {
     margin: 10%;
 }
 nav {
+    position: relative;
     background: rgba(255, 255, 255, 0);
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     text-align: left;
     border-radius: 10px;
-    padding-left: 20px;
 }
-
-nav {
-    background: rgba(255, 255, 255, 0);
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-    border-radius: 10px;
-    padding-left: 20px;
+nav img {
+    position: absolute;
+    right: 5%;
+    top:30%;
 }
 nav ul {
     margin: 0;
@@ -32,6 +27,36 @@ nav ul {
     list-style: none;
     display: flex;
 }
+nav form {
+    top:30%;
+    position: absolute;
+    right:10%;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav input[type="text"] {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 13px;
+  }
+  
+  nav button[type="submit"] {
+    background-color: #6e40c9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 13px;
+  }
+  
+  nav button[type="submit"]:hover {
+    background-color: #dddddd30;
+  }
 nav a {
     display: inline-block;
     color: white;
@@ -47,7 +72,6 @@ nav a:hover {
     background-color: #424b5b;
     
 }
-
 .active {
     border:solid 0.1px #424b5b;
 }
