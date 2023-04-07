@@ -4,28 +4,6 @@ body {
     font-family: 'Montserrat';
     color: #F7F5FB;
 }
-.meu-perfil{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.perfil {
-    float: left;
-    border-radius: 50%; 
-    margin-right: 100px;
-    box-shadow: 0 2px 5px rgba(0, 229, 255, 0.415);
-  }
-  
-  .descricao {
-    font-family: 'Montserrat' sans-serif;
-    font-weight: 700;
-    font-size: 60px;
-  }
-  .cor1{
-    color: #b300ff;
-    font-size: 75px;
-    font-weight: 800;
-  }
   .secao1{
     margin: 130px;
 }
@@ -57,4 +35,15 @@ nav a:hover {
 
 .active {
     box-shadow: 0 2px 5px rgba(0, 229, 255, 0.415);
+}
+header{
+    margin: 130px;
+}
+h1{
+    font-size: 90px;
+    margin-bottom: 0px;
+}
+h2{
+    font-family: 'Roboto Mono', monospace;
+    color: #8b8b8b;
 }
