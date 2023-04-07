@@ -1,7 +1,7 @@
 body {
     margin: 0 5%; 
     background:#010b16;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat';
     color: #F7F5FB;
 }
 
@@ -27,15 +27,15 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #dddddd30;
+    background-color: #424b5b;
     
 }
 
 .active {
-    box-shadow: 0 2px 5px rgba(0, 229, 255, 0.415);
+    border:solid 0.1px #424b5b;
 }
 #titulos {
-    max-width: 750px;
+    max-width: 800px;
   }
   
   #titulos h1 {
@@ -60,7 +60,7 @@ nav a:hover {
     width: 300px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 229, 255, 0.415);
+    border:solid 0.1px #424b5b;
     margin: 50px 0px 50px 0px;
     text-align: center;
     font-family: 'Montserrat';

@@ -29,12 +29,12 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #dddddd30;
+    background-color: #424b5b;
     
 }
 
 .active {
-    box-shadow: 0 2px 5px rgba(0, 229, 255, 0.415);
+    border:solid 0.1px #424b5b;
 }
 header{
     margin: 130px;
@@ -46,4 +46,18 @@ h1{
 h2{
     font-family: 'Roboto Mono', monospace;
     color: #8b8b8b;
+}
+.botao-header{
+    display: inline-block;
+    border: solid white 0.1px;
+    max-width: 573px;
+    padding: 20px;
+    background-color: #dddddd00;
+    border-color: #424b5b !important;
+    border-radius: 10px;
+    color: rgb(224, 224, 224);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
 }
