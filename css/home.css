@@ -14,6 +14,13 @@ nav {
     border-radius: 10px;
     padding-left: 20px;
 }
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
 
 nav a {
     display: inline-block;
@@ -40,7 +47,6 @@ nav a:hover {
   
   #titulos h1 {
     margin-bottom: 0.2em;
-    font-family: 'open-sans' sans-serif;
     font-size: 90px;
   }
   
@@ -63,7 +69,6 @@ nav a:hover {
     border:solid 0.1px #424b5b;
     margin: 50px 0px 50px 0px;
     text-align: center;
-    font-family: 'Montserrat';
 }
 
 .card h2 {
@@ -90,7 +95,7 @@ nav a:hover {
     background-color: #dddddd30;
 }
 .secao1{
-    margin: 130px;
+    margin: 10%;
 }/*
 .effect1{
     position: absolute;
@@ -106,3 +111,20 @@ nav a:hover {
     0 0 140px 90px #0ff;
 
 }*/
+@media screen and (max-width: 600px) {
+    #cards{
+        flex-direction: column;
+        width: 90%;
+    }
+    .card{
+        margin-top: 1px;
+        margin: 0px;
+    }
+    #titulos h1{
+        font-size: 40px;
+    }
+    #titulos p.subtitulo{
+        margin-bottom: 30px;
+    }
+  }
+  
