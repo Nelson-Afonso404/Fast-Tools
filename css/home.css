@@ -92,24 +92,23 @@ nav a:hover {
   margin-top: 0.2em;
   font-family: 'Roboto Mono', monospace;
   color: #8b8b8b;
+  font-size: 15px;
 }
 
 #cards {
   display: flex;
-  width: 100%;
   justify-content: center;
   gap: 20px;
 }
 
 .card {
   background-color: #ffffff00;
-  
+  width: 100%;
   padding: 20px;
   border-radius: 10px;
   border: solid 0.1px #424b5b;
-  margin: 50px 0px 50px 0px;
+  margin-bottom: 50px;
   text-align: center;
-  align-self: flex-end;
 }
 
 .card h2 {
@@ -151,6 +150,11 @@ width: 90%;
 height: auto;
 margin-top: 1px;
 margin: 0px;
+border: solid 0.9px #424b5b;
+
+}
+.card p{
+font-size: 14px;
 }
 #titulos h1 {
 font-size: 70px;
@@ -158,15 +162,12 @@ font-size: 70px;
 #titulos p.subtitulo {
 max-width: 780px;
 margin-bottom: 30px;
-font-size: 16px;
 }
 #titulos {
 text-align: center;
 justify-content: center;
 }
 .botao-ferramenta {
-font-size: 15px;
+font-size: 16px;
 }
 }
-
-/* Fim do código */
