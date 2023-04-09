@@ -21,10 +21,3 @@ function openPopup() {
     var popup = window.open("", "popup", "width=400,height=300,top=100,left=100");
     popup.document.getElementById("resultado").innerHTML = resultado;
   }
-  const menu = document.querySelector('.menu');
-  const nav = document.querySelector('.nav-links');
-
-  menu.addEventListener('click', () => {
-    menu.classList.toggle('ativo');
-    nav.classList.toggle('ativo');
-  });

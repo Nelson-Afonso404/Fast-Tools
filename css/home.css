@@ -87,6 +87,7 @@ background-color: #424b5b;
   height: 2px;
   margin: 6px auto;
   background-color: #F7F5FB;
+  transition: 0.5s;
 }
 .active {
 border: solid 0.1px #424b5b;
@@ -185,7 +186,7 @@ margin: 10%;
   }
   .menu{
     display: block;
-    margin-left: 5%;
+    left: 0;
   }
   .menu.ativo .line:nth-child(1){
     transform: translateY(8px) rotate(45deg);
@@ -196,8 +197,20 @@ margin: 10%;
   .menu.ativo .line:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
   }
-  #componente-nav{
-    display: none;
-  }
+  .nav-links{
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+    gap: -10px;
 }
-
+  .nav-links.ativo{
+    left: 0;
+  }
+  #componente-nav{
+    margin: 16px 0;
+    margin-left: 13%;
+}
+}
