@@ -9,20 +9,25 @@
 
 </head>
 <body>
-	<script src="js/functions.js"></script>
+	<script src="/js/functions.js"></script>
 	
 	<nav>
+		<img src="/img/logo.svg" width="20px">
 		<ul class="nav-links">
-			<a href="#"><img src="/img/logo.svg" width="20px" alt="Logo"></a>
-			<li><a class="active">Home</a></li>
-			<li><a href="html/sobre.html">Sobre</a></li>
-			<li><a href="#">Repositório</a></li>
-			<li><a href="#">Contato</a></li>
-			<form>
-			<input type="text" placeholder="Pesquisar...">
-			<button type="submit">Buscar</button>
-			</form>
+			<li><a id="componente-nav" class="active">Home</a></li>
+			<li><a id="componente-nav" href="html/sobre.html">Sobre</a></li>
+			<li><a id="componente-nav" href="#">Repositório</a></li>
+			<li><a id="componente-nav" href="#">Contato</a></li>
 	</ul>
+	<form>
+		<input type="text" placeholder="Pesquisar...">
+		<button type="submit">Buscar</button>
+		</form>
+	<div class="menu">
+		<span class="line"></span>
+		<span class="line"></span>
+		<span class="line"></span>
+	</div>
 	</nav>
 	
   <section class="secao1">
@@ -51,5 +56,14 @@
 	</div>
 </div>
 </section>
+<script>
+	const menu = document.querySelector('.menu');
+  const NavMenu = document.querySelector('.nav-links');
+
+  menu.addEventListener('click', () => {
+      menu.classList.toggle('ativo');
+      NavMenu.classList.toggle('ativo');
+  })
+</script>
 </body>
 </html>
