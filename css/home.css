@@ -120,7 +120,6 @@ border: solid 0.1px #424b5b;
 
 #titulos {
 max-width: 800px;
-
 }
 
 #titulos h1 {
@@ -194,7 +193,7 @@ margin: 10%;
   width: 90%;
   margin: 0px;
   justify-content: center;
-  border: solid 0.9px #424b5b;
+  border: solid 3px #424b5b;
 
   }
   .card h2{
@@ -208,10 +207,11 @@ margin: 10%;
   font-size: 70px;
   }
   #titulos p.subtitulo {
-  max-width: 780px;
   margin-bottom: 30px;
+  text-align: justify;
   }
   #titulos {
+  max-width: 100%;
   text-align: center;
   justify-content: center;
   margin-top: 20%;
@@ -284,5 +284,8 @@ nav input[type="text"] {
     .lupa{
       display: block;
       width: 50px;
+    }
+    .secao1{
+      margin: 0;
     }
 }

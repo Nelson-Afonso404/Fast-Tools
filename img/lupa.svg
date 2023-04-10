@@ -1,1 +1,82 @@
-<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 807.07 809.11"><defs><style>.cls-1,.cls-2{fill:#fff;}.cls-1{fill-rule:evenodd;}</style></defs><title>lupa</title><g id="Icons1"><path class="cls-1" d="M674,744.9c-57.16,42.3,120.57-139.44,70-70.36,1.27-.1-1.08,3.73-8.94,13.34,0,0,135.07,134.15,201.37,202.43,23,24.89-18.51,74.57-46.73,48.63-60-58.25-202.11-203-202.33-203.26L674,744.9Z" transform="translate(-136.03 -137.13)"/><path class="cls-2" d="M475.52,812.73c86.91-.84,172.94-36.83,234.8-98,73.47-72.62,111.31-180,98.11-282.61-22.61-175.75-167.1-295-335.07-295C345.74,137.13,221.7,217,167.3,332.72c-41.65,88.63-41.73,195.64,0,284.42,54,115,176,194.36,303.88,195.59Zm-4-56.31c-129.79-1.25-250.88-101.62-275-230.31-17-90.72,15.07-188.9,81.82-253.33C356.33,197.54,478.83,172.34,580.69,215,671.81,253.14,740,341.74,752.59,439.34c10.77,83.67-19.25,171.35-78.25,231.74-51.75,53-124.33,84.62-199.17,85.34Z" transform="translate(-136.03 -137.13)"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;fill:#46CE63;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st2{fill:#FFFFFF;}
+</style>
+<rect x="-206.9" y="-157.9" class="st0" width="1960.9" height="1605.4"/>
+<g id="Icons1">
+	<g id="Strike">
+	</g>
+	<g id="H1">
+	</g>
+	<g id="H2">
+	</g>
+	<g id="H3">
+	</g>
+	<g id="list-ul">
+	</g>
+	<g id="hamburger-1">
+	</g>
+	<g id="hamburger-2">
+	</g>
+	<g id="list-ol">
+	</g>
+	<g id="list-task">
+	</g>
+	<g id="trash">
+	</g>
+	<g id="vertical-menu">
+	</g>
+	<g id="horizontal-menu">
+	</g>
+	<g id="sidebar-2">
+	</g>
+	<g id="Pen">
+	</g>
+	<g id="Pen1">
+	</g>
+	<g id="clock">
+	</g>
+	<g id="external-link">
+	</g>
+	<g id="hr">
+	</g>
+	<g id="info">
+	</g>
+	<g id="warning">
+	</g>
+	<g id="plus-circle">
+	</g>
+	<g id="minus-circle">
+	</g>
+	<g id="vue">
+	</g>
+	<g id="cog">
+	</g>
+	<g id="logo">
+	</g>
+	<g id="eye-slash">
+	</g>
+	<g id="eye">
+	</g>
+	<g id="toggle-off">
+	</g>
+	<g id="shredder">
+	</g>
+	<path class="st1" d="M674,744.9c-57.2,42.3,120.6-139.4,70-70.4c1.3-0.1-1.1,3.7-8.9,13.3c0,0,135.1,134.2,201.4,202.4
+		c23,24.9-18.5,74.6-46.7,48.6c-60-58.3-202.1-203-202.3-203.3L674,744.9L674,744.9z"/>
+	<path class="st2" d="M475.5,812.7c86.9-0.8,172.9-36.8,234.8-98c73.5-72.6,111.3-180,98.1-282.6c-22.6-175.8-167.1-295-335.1-295
+		c-127.6,0-251.7,79.8-306.1,195.6c-41.6,88.6-41.7,195.6,0,284.4c54,115,176,194.4,303.9,195.6
+		C472.6,812.7,474.1,812.7,475.5,812.7z M471.5,756.4c-129.8-1.2-250.9-101.6-275-230.3c-17-90.7,15.1-188.9,81.8-253.3
+		c77.9-75.2,200.4-100.4,302.3-57.8c91.1,38.2,159.3,126.7,171.9,224.4c10.8,83.7-19.3,171.3-78.2,231.7
+		c-51.8,53-124.3,84.6-199.2,85.3C474,756.4,472.8,756.4,471.5,756.4z"/>
+	<g id="spinner--loading--dots-">
+	</g>
+	<g id="react">
+	</g>
+</g>
+</svg>
