@@ -1,11 +1,11 @@
 body {
     margin: 0 5%; 
+    background-image: url(/img/background.png);
     background:#010b16;
     font-family: 'Montserrat';
     color: #F7F5FB;
     overflow-x: hidden;
   }
-  
   nav {
   position: relative;
   background: rgba(255, 255, 255, 0);

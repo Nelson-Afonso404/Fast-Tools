@@ -1,11 +1,18 @@
 body {
   margin: 0 5%; 
-  background:#010b16;
+  background-image: url(/img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--dark);
   font-family: 'Montserrat';
   color: #F7F5FB;
   overflow-x: hidden;
 }
-
+:root{
+  --secundaria:#25d651;
+  --white:#fff;
+  --dark:#06141f;
+}
 nav {
 position: relative;
 background: rgba(255, 255, 255, 0);
@@ -46,7 +53,7 @@ font-size: 13px;
 }
 
 nav button[type="submit"] {
-background-color: #6e40c9;
+  background:var(--secundaria);
 color: white;
 border: none;
 padding: 10px 20px;
@@ -74,7 +81,25 @@ font-size: 13px;
 nav a:hover {
 background-color: #424b5b;
 }
-
+.engrenagens{
+  position: absolute;
+  z-index: -1;
+  top:20%;
+  width: 125px;
+  animation: mover 2s ease-in-out infinite alternate;
+}
+@keyframes mover {
+  from {
+    top:30%;
+    right: 17%;
+  }
+  to {
+    right: 25%;
+  }
+  to{
+    top: 25%;
+  }
+}
 .menu{
   position: absolute;
   cursor: pointer;
@@ -137,7 +162,7 @@ margin-bottom: 20px;
 }
 
 .botao-ferramenta {
-background-color: #6e40c9;
+  background:var(--secundaria);
 color: white;
 border: none;
 padding: 10px 20px;
@@ -212,5 +237,9 @@ margin: 10%;
   #componente-nav{
     margin: 16px 0;
     margin-left: 13%;
+  
+}
+.engrenagens{
+  display: none;
 }
 }
