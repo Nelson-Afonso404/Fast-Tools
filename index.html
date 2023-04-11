@@ -9,26 +9,32 @@
 
 </head>
 <body>
-	<script src="js/functions.js"></script>
-	
+	<script src="/js/functions.js"></script>
 	<nav>
+		<img src="/img/logo.svg" width="20px">
 		<ul class="nav-links">
-			<a href="#"><img src="/img/logo.svg" width="20px" alt="Logo"></a>
-			<li><a class="active">Home</a></li>
-			<li><a href="html/sobre.html">Sobre</a></li>
-			<li><a href="#">Repositório</a></li>
-			<li><a href="#">Contato</a></li>
-			<form>
-			<input type="text" placeholder="Pesquisar...">
-			<button type="submit">Buscar</button>
-			</form>
+			<li><a id="componente-nav" class="active">Home</a></li>
+			<li><a id="componente-nav" href="html/sobre.html">Sobre</a></li>
+			<li><a id="componente-nav" href="#">Repositório</a></li>
+			<li><a id="componente-nav" href="#">Contato</a></li>
 	</ul>
+	<form>
+		<input type="text" placeholder="Pesquisar...">
+		<button type="submit">Buscar</button>
+		<img class="lupa" src="/img/lupa.svg" width="40px">
+		</form>
+	<div class="menu">
+		<span class="line"></span>
+		<span class="line"></span>
+		<span class="line"></span>
+	</div>
 	</nav>
 	
   <section class="secao1">
 	<div id="titulos">
 		<h1>Seja Bem Vindo.</h1>
 		<p class="subtitulo">Aqui você pode encontrar informações sobre minhas habilidades, projetos pessoais e profissionais, experiências de trabalho e educação, além de formas de entrar em contato comigo.</p>
+		<img src="/img/engrenagens.svg" class="engrenagens">
 	</div>
 	  
 	<div id="cards">
@@ -51,5 +57,14 @@
 	</div>
 </div>
 </section>
+<script>
+	const menu = document.querySelector('.menu');
+  const NavMenu = document.querySelector('.nav-links');
+
+  menu.addEventListener('click', () => {
+      menu.classList.toggle('ativo');
+      NavMenu.classList.toggle('ativo');
+  })
+</script>
 </body>
 </html>

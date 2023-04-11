@@ -1,115 +1,131 @@
 body {
     margin: 0 5%; 
+    background-image: url(/img/background.png);
     background:#010b16;
     font-family: 'Montserrat';
     color: #F7F5FB;
-}
-  .secao1{
-    margin: 10%;
-}
-nav {
-    position: relative;
-    background: rgba(255, 255, 255, 0);
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-    border-radius: 10px;
-}
-nav img {
-    position: absolute;
-    right: 5%;
-    top:30%;
-}
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-}
-nav form {
-    top:30%;
-    position: absolute;
-    right:10%;
-    display: flex;
-    align-items: center;
+    overflow-x: hidden;
+  }
+  nav {
+  position: relative;
+  background: rgba(255, 255, 255, 0);
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+  }
+  
+  nav img {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+  }
+  
+  nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  }
+  
+  nav form {
+  top: 30%;
+  position: absolute;
+  right: 10%;
+  display: flex;
+  align-items: center;
   }
   
   nav input[type="text"] {
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    margin-right: 5px;
-    font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 5px;
+  font-size: 13px;
   }
   
   nav button[type="submit"] {
-    background-color: #6e40c9;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 13px;
+  background-color: #6e40c9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 13px;
   }
   
   nav button[type="submit"]:hover {
-    background-color: #dddddd30;
+  background-color: #dddddd30;
   }
-nav a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 1px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-size: 13px;
-}
-
-nav a:hover {
-    background-color: #424b5b;
-    
-}
-.active {
-    border:solid 0.1px #424b5b;
-}
-header{
-    margin: 10%;
-}
-h1{
-    font-size: 90px;
-    margin-bottom: 0px;
-}
-h2{
-    font-family: 'Roboto Mono', monospace;
-    color: #8b8b8b;
-}
-.botao-header{
-    display: inline-block;
-    border: solid white 0.1px;
-    max-width: 573px;
-    padding: 20px;
-    background-color: #dddddd00;
-    border-color: #424b5b !important;
-    border-radius: 10px;
-    color: rgb(224, 224, 224);
-    text-decoration: none;
+  
+  nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 1px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 13px;
+  }
+  
+  nav a:hover {
+  background-color: #424b5b;
+  }
+  
+  .menu{
+    position: absolute;
     cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 30px;
-}
-@media screen and (max-width: 600px) {
-    h1{
-        font-size: 40px;
+    top: 30%;
+    display: none;
+  }
+  .menu .line{
+    display: block;
+    width: 28px;
+    height: 2px;
+    margin: 6px auto;
+    background-color: #F7F5FB;
+    transition: 0.5s;
+  }
+  .active {
+  border: solid 0.1px #424b5b;
+  }
+  
+  
+  
+  .secao1 {
+  margin: 10%;
+  }
+  @media only screen and (max-device-width: 600px) {
+    .menu{
+      display: block;
+      left: 0;
     }
-    h2{
-        font-size:20px ;
+    .menu.ativo .line:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
     }
-    .botao-header{
-        max-width: 100px;
-        font-size: 12px;
-        margin-top: 10px;
+    .menu.ativo .line:nth-child(2){
+      opacity: 0;
     }
-}
+    .menu.ativo .line:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-links{
+      position: fixed;
+      right: -100%;
+      top: 70px;
+      width: 20%;
+      height: 100%;
+      flex-direction: column;
+      gap: -10px;
+  }
+    .nav-links.ativo{
+      left: 0;
+    }
+    #componente-nav{
+      margin: 16px 0;
+      margin-left: 13%;
+  }
+  }

@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/sobre.css" media="screen" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<title>Fast Tools</title>
+  <link rel="stylesheet" type="text/css" href="/css/sobre.css" media="screen" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700;800&family=Roboto+Mono&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <title>Fast Tools</title>
-    
 </head>
 <body>
-    <nav>
+	<script src="/js/functions.js"></script>
+	
+	<nav>
+		<img src="/img/logo.svg" width="20px">
 		<ul class="nav-links">
-            <a href="#"><img src="/img/logo.svg" width="20px" alt="Logo"></a>
-            <li><a href="/index.html">Home</a></li>
-            <li><a class="active"href>Sobre</a></li>
-            <li><a href="#">Repositório</a></li>
-            <li><a href="#">Contato</a></li>
-            <form>
-                <input type="text" placeholder="Pesquisar...">
-                <button type="submit">Buscar</button>
-            </form>
+			<li><a id="componente-nav"  href="/index.html">Home</a></li>
+			<li><a id="componente-nav" class="active">Sobre</a></li>
+			<li><a id="componente-nav" href="#">Repositório</a></li>
+			<li><a id="componente-nav" href="#">Contato</a></li>
 	</ul>
+	<form>
+		<input type="text" placeholder="Pesquisar...">
+		<button type="submit">Buscar</button>
+		</form>
+	<div class="menu">
+		<span class="line"></span>
+		<span class="line"></span>
+		<span class="line"></span>
+	</div>
 	</nav>
-    <header>
-        <div class="apresentacao">
-          <h1>Olá, eu sou<br> <span>Nelson Afonso</span></h1>
-          <h2>Desenvolvedor web</h2>
-          <a href="https://github.com/Nelson-Afonso404" class="botao-header"> Ver Repositórios</a>
-        </div>
-      </header>
+	
+  <section class="secao1">
+	
+</section>
+<script>
+	const menu = document.querySelector('.menu');
+  const NavMenu = document.querySelector('.nav-links');
+
+  menu.addEventListener('click', () => {
+      menu.classList.toggle('ativo');
+      NavMenu.classList.toggle('ativo');
+  })
+</script>
 </body>
 </html>
