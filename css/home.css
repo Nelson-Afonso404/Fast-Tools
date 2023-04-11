@@ -280,6 +280,7 @@ nav input[type="text"] {
 }
   nav button[type="submit"] {
    display:none;
+  }
     #cards{
         flex-direction: column;
        align-items: center;
