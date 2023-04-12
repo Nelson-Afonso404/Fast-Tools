@@ -182,9 +182,6 @@ background-color: #dddddd30;
 margin: 10%;
 }
 @media only screen and (max-device-width: 600px) {
-  body{
-    background-position: 50%;
-  }
   #cards {
   flex-direction: column;
   }
