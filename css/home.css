@@ -281,8 +281,6 @@ nav input[type="text"] {
        align-items: center;
     }
     .card{
-        width: 80%;
-        
         height: auto;
         margin-top: 1px;
         margin: 0px;
@@ -291,9 +289,9 @@ nav input[type="text"] {
         font-size: 70px;
     }
     #titulos p.subtitulo{
-        max-width: 780px;
         margin-bottom: 30px;
-        font-size: 16px;
+        font-size: 17px;
+        text-align: center;
     }
     .lupa{
       display: block;
