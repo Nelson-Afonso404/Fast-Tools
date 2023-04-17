@@ -1,0 +1,10 @@
+body {
+    margin: 0 5%; 
+    background-image: url(/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--dark);
+    font-family: 'Montserrat', sans-serif;
+    color: #F7F5FB;
+    overflow-x: hidden;
+  }
