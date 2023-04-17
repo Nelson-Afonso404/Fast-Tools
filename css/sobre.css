@@ -21,6 +21,7 @@ margin: 0 auto;
 padding: 20px;
 text-align: left;
 border-radius: 10px;
+z-index: 999;
 }
 
 nav img {
