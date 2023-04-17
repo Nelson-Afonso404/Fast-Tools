@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+		<img src="/img/logo.svg" width="20px">
+		<ul class="nav-links">
+			<li><a id="componente-nav" href="/index.html" class="active">Home</a></li>
+			<li><a id="componente-nav" href="components/sobre/sobre.html">Sobre</a></li>
+			<li><a id="componente-nav" href="components/repositorios/repos.html">Repositório</a></li>
+			<li><a id="componente-nav" href="components/contato/contact.html">Contato</a></li>
+	</ul>
+	<form>
+		<input type="text" placeholder="Pesquisar...">
+		<button type="submit">Buscar</button>
+		<img class="lupa" src="/img/lupa.svg" width="40px">
+		</form>
+	<div class="menu">
+		<span class="line"></span>
+		<span class="line"></span>
+		<span class="line"></span>
+	</div>
+	</nav>
+    <style>
+        :root{
+        --secundaria:#25d651;
+        --white:#fff;
+        --dark:#06141f;
+        }
+        nav {
+        position: relative;
+        background: rgba(255, 255, 255, 0);
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: left;
+        border-radius: 10px;
+        z-index: 999;
+        }
+
+        nav img {
+        position: absolute;
+        right: 5%;
+        top: 30%;
+        }
+
+        nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        }
+
+        nav form {
+        top: 30%;
+        position: absolute;
+        right: 10%;
+        display: flex;
+        align-items: center;
+        }
+
+        nav input[type="text"] {
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin-right: 5px;
+        font-size: 13px;
+        }
+
+        nav button[type="submit"] {
+        background:var(--secundaria);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 13px;
+        }
+
+        nav button[type="submit"]:hover {
+        background-color: #dddddd30;
+        }
+
+        nav a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 1px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        font-size: 13px;
+        }
+
+        nav a:hover {
+        background-color: #8f959f;
+        }
+        .menu{
+        position: absolute;
+        cursor: pointer;
+        top: 100%;
+        display: none;
+        }
+        .menu .line{
+        display: block;
+        width: 50px;
+        height: 6px;
+        margin: 9px auto;
+        background-color: #F7F5FB;
+        transition: 0.5s;
+        }
+        .active {
+        border: solid 0.1px #8f959f;
+        }
+        @media only screen and (max-device-width: 600px) {
+        body{
+            background-image: none;
+        }
+        #cards {
+        flex-direction: column;
+        }
+        .card {
+        padding: 40px;
+        width: 90%;
+        margin: 0px;
+        justify-content: center;
+        border: solid 3px #424b5b;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.176) 0%, rgba(0,212,255,0) 100%);
+        }
+        .card h2{
+            font-size: 38px;
+            margin-bottom: 0;
+        }
+        .card p{
+        font-size: 20px;
+        }
+        #titulos h1 {
+        font-size: 70px;
+        }
+        #titulos p.subtitulo {
+        margin-bottom: 30px;
+        text-align: justify;
+        }
+        #titulos {
+        max-width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20%;
+        }
+        .botao-ferramenta {
+        font-size: 35px;
+
+        }
+        .menu{
+            display: block;
+            left: 0;
+        }
+        .menu.ativo .line:nth-child(1) {
+            transform: rotate(-45deg) translate(-21px);
+        }
+        
+        .menu.ativo .line:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .menu.ativo .line:nth-child(3) {
+            transform: rotate(45deg) translate(-21px);
+        }
+        .nav-links{
+            position: fixed;
+            border-radius: 20px;
+            top: 120px;
+            padding: 100px;
+            flex-direction: column;
+            gap: -10px;
+            text-align: center;
+            justify-content: center;
+            display: none;
+            }
+            .nav-links.ativo{
+                background: var(--white);
+                left: 30px;
+                display: block;
+                
+            }
+            #componente-nav{
+                margin: 40px 0px;
+            font-size: 30px;
+                color: var(--dark);
+            }
+            .engrenagens{
+            display: none;
+            }
+            nav img{
+            right: 50%;
+            top:100%;
+            width: 30px;
+            }
+            nav form{
+            top:100%;
+            right: 5%;
+            }
+            nav input[type="text"] {
+            display: none;
+            /*
+            padding: 15px;;
+            font-size: 17px;
+            }
+            */
+            }
+            nav button[type="submit"] {
+            display:none;
+            }
+            .lupa{
+            display: block;
+            width: 50px;
+            }
+            .secao1{
+            margin: 0;
+            }
+        }
+    </style>
+</body>
+</html>
