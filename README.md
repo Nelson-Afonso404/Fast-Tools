@@ -2,7 +2,7 @@
 
 📁 Este repositório contém o código fonte do meu site portfólio pessoal. Aqui você pode encontrar informações sobre minhas habilidades, projetos pessoais e profissionais, experiências de trabalho e educação, além de formas de entrar em contato comigo.
 
-📢[RECADO] Este projeto foi iniciado do zero no github, e para proseguir com o projeto eu terei que aprender JavaScript e Vui.js, logo, o projeto entrará em pausa por tempo indeterminado até eu aprender o necessário dessas linguagens para prosseguir com o projeto, agradeço a atenção.
+📢[RECADO] Este projeto foi iniciado do zero no github, e para proseguir com o projeto eu terei que aprender JavaScript e algum framework, logo, o projeto entrará em pausa por tempo indeterminado até eu aprender o necessário dessas linguagens para prosseguir com o projeto, agradeço a atenção.
 
 ## Conteúdo
 
